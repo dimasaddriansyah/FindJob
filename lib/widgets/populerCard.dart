@@ -84,7 +84,7 @@ class PopulerCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'IDR',
+                    'Penghasilan',
                     style: subtitleTextStyle,
                   ),
                   SizedBox(

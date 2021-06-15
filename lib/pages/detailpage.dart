@@ -108,14 +108,14 @@ class DetailPage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Salary',
+                                  'Penghasilan',
                                   style: subtitleTextStyle,
                                 ),
                                 SizedBox(
                                   height: 4,
                                 ),
                                 Text(
-                                  'IDR 5.000.000',
+                                  'Rp 5.000.000',
                                   style: titleTextStyle,
                                 ),
                               ],
@@ -171,7 +171,7 @@ class DetailPage extends StatelessWidget {
                             ),
                             Flexible(
                               child: Text(
-                                'Merancang, Membangun, Menerapkan dan Maintain Mobile Application.',
+                                'Menerapkan Code Clean pada aplikasi agar mudah di kembangakan untuk kedepannya.',
                                 style: subtitleTextStyle.copyWith(
                                   fontSize: 14,
                                 ),
@@ -193,10 +193,22 @@ class DetailPage extends StatelessWidget {
                               width: 16,
                             ),
                             Flexible(
-                              child: Text(
-                                'Merancang, Membangun, Menerapkan dan Maintain Mobile Application. Selengkapnya...',
-                                style: subtitleTextStyle.copyWith(
-                                  fontSize: 14,
+                              child: RichText(
+                                text: TextSpan(
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text:
+                                          'Merancang, Membangun, Menerapkan dan Maintain Mobile Application.',
+                                      style: subtitleTextStyle,
+                                    ),
+                                    TextSpan(
+                                      text: ' Selengkapnya...',
+                                      style: subtitleTextStyle.copyWith(
+                                        color: purpleColor,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
